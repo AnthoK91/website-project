@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <ref stylesheet="styles.css"></ref>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Container">
+    <div class="TopBanner">
     <header>
     <h2>Header Logo</h2>
     <ul>
@@ -17,14 +17,16 @@
     </ul>
     </ul>
     </header>
-    <div class="TopBanner">
+    <div class="hero">
+        <div class="leftText">
         <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-        <button>Sign up</button>
+        <p class="bodyFont">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+        <a href="/"><button class="bn632-hover bn23">Sign up</button></a>
+            </div>
         <img 
-        height="200px"
-        width="300px"
-        src="images/eirik-hodne-AtQ7Pnhs7e4-unsplash.jpg"
+        class="heroImage"
+        src="images/eirik-hodne-AtQ7Pnhs7e4-unsplash.jpg">
+</div>
     </div>
     <div class="moduleOne">
         <h2>Some random information.</h2>
@@ -53,20 +55,28 @@
     </div>
     </div>
     <div class="moduleTwo">
+        <div class="quoteContainer">
         <p class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or mayube people will actually read it. Who knows? All I know is that it looks nice.</p>
         <p class="author">Thor, God of Thunder</p>
     </div>
+    </div>
     <div class="moduleThree">
         <div class="blueMini">
+            <div class="blueMiniText">
+                <div class="blueminiTextheader">
             <h3>Call to action! It's time!</h3>
             <p>Sign up for our product by clicking that button right over there!</p>
-            <button class="signUpMini">Sign up</button>
+        </div>
+        <a class="blueMiniButton" href="/">
+            <button class="bn54">
+              <span class="bn54span">Sign Up</span>
+            </button>
+          </a>
+        </div>
         </div>
     </div>
-    <footer>
+    <footer class="footer">
         <p>Copyright The Odin Project 2021</p>
     </footer>
-
-</div>
 </body>
 </html>
